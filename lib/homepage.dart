@@ -67,7 +67,7 @@ child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    /// **🔹 Top Row (Menu + Profile Image)**
+                  
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -102,7 +102,7 @@ child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
           
                     SizedBox(height: screenheight * 0.04),
           
-                    /// **🔹 Title Text**
+                    
                     Text(
                       'Our',
                       style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600, color: Colors.black26),
@@ -114,7 +114,7 @@ child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
           
                     SizedBox(height: screenheight * 0.04),
           
-                    /// **🔹 Search Bar & Filter Icon**
+                  
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -155,7 +155,7 @@ child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
           
               SizedBox(height: screenheight * 0.04),
           
-              /// **🔹 Product List (Horizontal Scrolling)**
+              
               Container(
                 height: screenheight * 0.07,
                 width: double.infinity,
@@ -208,7 +208,7 @@ child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
           
               SizedBox(height: screenheight * 0.04),
           
-              /// **🔹 Main Screen Product Display**
+              
               Container(
                 height: screenheight * 0.4,
                 width: double.maxFinite,
@@ -243,7 +243,7 @@ child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
                                 ),
                                 SizedBox(height: screenheight * 0.02),
                                 
-                                /// **🔹 Updated Image Stack with Overflow Fix**
+                          
                                 Stack(
                                   clipBehavior: Clip.none,
                                   children: [

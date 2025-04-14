@@ -18,12 +18,12 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
   void initState() {
     super.initState();
 
-    /// **🔹 Typing Animation Effect**
+  
     Future.delayed(Duration(milliseconds: 500), () {
       _startTypingEffect();
     });
 
-    /// **🔹 Navigate to Login Page After 3 Seconds**
+  
     Future.delayed(Duration(seconds: 3), () {
       Get.to(Login());
     });

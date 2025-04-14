@@ -13,6 +13,7 @@ class _LoginState extends State<Login> {
   final TextEditingController _numberController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
+  
 
   @override
   Widget build(BuildContext context) {
@@ -29,11 +30,11 @@ class _LoginState extends State<Login> {
                 children: [
                   SizedBox(height: screenHeight * 0.09),
         
-                  // Login Image
+                  
                   Image.asset('assets/login.png'),
                   SizedBox(height: screenHeight * 0.05),
         
-                  // Number Field
+            
                   TextFormField(
                     controller: _numberController,
                     keyboardType: TextInputType.number,
@@ -53,11 +54,11 @@ class _LoginState extends State<Login> {
                   ),
                   SizedBox(height: screenHeight * 0.03),
         
-                  // Password Field
+                
                   TextFormField(
                     controller: _passwordController,
                     keyboardType: TextInputType.text,
-                    obscureText: true, // Password hidden rahega
+                    obscureText: true, 
                     decoration: InputDecoration(
                       hintText: 'Enter your Password',
                       labelText: 'Your Password',
@@ -75,10 +76,14 @@ class _LoginState extends State<Login> {
                   ),
                   SizedBox(height: screenHeight * 0.03),
         
-                  // Login Button
+            
                   ElevatedButton(
                     onPressed: () {
+                      
                       if (_formKey.currentState!.validate()) {
+                        print(_numberController.text);
+                        print(_passwordController.text);
+
                         Get.to(HomePage());
                       }
                     },
@@ -94,7 +99,7 @@ class _LoginState extends State<Login> {
                   ),
                   SizedBox(height: screenHeight * 0.02),
         
-                  // Register Button
+                  
                   TextButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
